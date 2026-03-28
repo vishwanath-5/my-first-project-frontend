@@ -24,20 +24,22 @@ function Signup({ setAuth }) {
         <div>
         <h2> Signup </h2>
         <input 
+        className="border p-2 rounded w-full"
         type="text"
         placeholder = "Username"
         autoComplete="off"
         onChange = {
             (e) => setUsername(e.target.value) }
-        /> <
-        input 
+        /> 
+        <input
+          className="border p-2 rounded w-full" 
          type = "password"
          autoComplete="off"
          placeholder = "Password"
          onChange = {
             (e) => setPassword(e.target.value) }
-        /> <
-        button onClick = { handleSignup } > Signup </button> 
+        /> 
+        <button  className="bg-blue-500 py-3 px-4 my-1 py-2 text-white rounded" onClick = { handleSignup } > Signup </button> 
         </div>
     );
 }

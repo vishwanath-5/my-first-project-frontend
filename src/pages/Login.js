@@ -20,18 +20,20 @@ function Login({ setAuth }) {
   return (
     <div>
       <input
+        className="border p-2 rounded w-full"
         type="text"
         placeholder="Username"
         autoComplete="off"
         onChange={(e) => setUsername(e.target.value)}
       />{' '}
       <input
+        className="border p-2 rounded w-full"
         type="password"
         placeholder="Password"
         autoComplete="off"
         onChange={(e) => setPassword(e.target.value)}
       />{' '}
-      <button onClick={handleLogin}> Login </button>{' '}
+      <button  className="bg-blue-500 py-3 px-4 my-1 py-2 text-white rounded" onClick={handleLogin}> Login </button>{' '}
     </div>
   );
 }

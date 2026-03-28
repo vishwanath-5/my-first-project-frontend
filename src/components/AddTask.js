@@ -52,6 +52,7 @@ function AddTask({ refresh }) {
         <option value="HIGH"> High </option>{' '}
       </select>{' '}
       <input
+      placeholder='Due date'
         className="border p-2 rounded w-full"
         type="datetime-local"
         value={dueDate}
